@@ -4,12 +4,9 @@ title: AION Fentury API Documentation
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell
   - ruby
-  - python
-  - javascript
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
+  - <a href='https://aiondigital.com/'>Documentation Powered by Aion Digital</a>
 
 includes:
   - errors
@@ -18,12 +15,12 @@ search: true
 ---
 
 # Introduction
+Welcome to the AION Digital World! Future of Fintech.
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Personal finance manager which connects to your bank accounts automatically, allows you to keep track of your bills, set financial goals and get advice.
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
+We have language bindings in Shell, Ruby. You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
 # Authentication
 
@@ -65,9 +62,9 @@ Kittn expects for the API key to be included in all API requests to the server i
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-# Kittens
+# Categories
 
-## Get All Kittens
+## Get a list of all user categories
 
 ```ruby
 require 'kittn'
