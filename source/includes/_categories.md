@@ -6,8 +6,8 @@
 ```
 
 ```shell
-curl "http://api.aiondigital.com/api/categories"
-  -H "client_id: xxx-yyy-zzz, client_secret: xxx-yyy-zzz"
+curl "https://www.example.com/api/v14/categories"
+  -H "SECRET_TOKEN: xxx-yyy-zzz,CLIENT_ID: xxx-yyy-zzz, CLIENT_SECRET: xxx-yyy-zzz"
 ```
 
 > The above command returns JSON structured like this:
@@ -41,14 +41,14 @@ This endpoint retrieves all user categories.
 
 ### HTTP Request
 
-`GET http://api.aiondigital.com/v1/categories`
+`GET http://www.example.com/api/v14/categories`
 
 ### Query Parameters
 
 Parameter | Description
 --------- | ------- 
-client_id | It is used to authenticate a User & It should be present in every request to server.
-client_secret | It is used to authenticate a User & It should be present in every request to server.
+CLIENT_ID | It is used to authenticate a User & It should be present in every request to server.
+CLIENT_SECRET | It is used to authenticate a User & It should be present in every request to server.
 
 ## Get a Specific Category
 
@@ -57,8 +57,8 @@ client_secret | It is used to authenticate a User & It should be present in ever
 ```
 
 ```shell
-curl "http://api.aiondigital.com/v1/categories/2283811"
-  -H "client_id: xxx-yyy-zzz, client_secret: xxx-yyy-zzz"
+curl "http://www.example.com/api/v11/categories/2283811"
+  -H "SECRET_TOKEN: xxx-yyy-zzz, CLIENT_ID: xxx-yyy-zzz, CLIENT_SECRET: xxx-yyy-zzz"
 ```
 
 
@@ -83,7 +83,7 @@ This endpoint retrieves a specific category.
 
 ### HTTP Request
 
-`GET http://api.aiondigital.com/v1/categories/:id`
+`GET http://www.example.com/api/v14/categories/:id`
 
 ### URL Parameters
 
@@ -97,9 +97,9 @@ ID | The ID of the category to retrieve
 ```
 
 ```shell
-curl "http://api.aiondigital.com/v1/categories/2283811"
+curl "http://www.example.com/api/v14/categories/2283811"
     -X DELETE
-  -H "client_id: xxx-yyy-zzz, client_secret: xxx-yyy-zzz"
+  -H "SECRET_TOKEN: xxx-yyy-zzz, CLIENT_ID: xxx-yyy-zzz, CLIENT_SECRET: xxx-yyy-zzz"
 ```
 > The above command returns JSON structured like this:
 
@@ -114,11 +114,10 @@ This endpoint deletes a specific category.
 
 ### HTTP Request
 
-`DELETE https://api.aiondigital.com/v1/categories/:id`
+`DELETE https://www.example.com/api/v14/categories/:id`
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
 :id | The ID of the category to delete
-
